@@ -10,14 +10,15 @@ import { Component, OnInit, } from '@angular/core';
     
     <app-inpu [contador]="addValue"></app-inpu>
     <button (click) = "add()"> Adicionar </button>
-    -->
     <ng-template [ngIf]="getDados">
-      <h1>{{getDados.nome}}</h1>
-      <h2>{{getDados.idade}}</h2>
+    <h1>{{getDados.nome}}</h1>
+    <h2>{{getDados.idade}}</h2>
     </ng-template>
     <app-output (enviarDados)="setDados($event)"></app-output>
-
-    <router-outlet></router-outlet>[
+    -->
+    <app-food-list></app-food-list>
+    <app-food-add></app-food-add>
+    <router-outlet></router-outlet>
 
   `
 })
