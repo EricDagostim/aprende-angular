@@ -4,7 +4,8 @@ import { Component, OnInit, } from '@angular/core';
   selector: 'app-root',
   template: `
 
-  <!-- <app-diretivas-estruturais></app-diretivas-estruturais>
+  <!-- 
+  <app-diretivas-estruturais></app-diretivas-estruturais>
     <app-data-binding></app-data-binding> 
     
     <app-inpu [contador]="addValue"></app-inpu>
@@ -16,7 +17,9 @@ import { Component, OnInit, } from '@angular/core';
     </ng-template>
     <app-output (enviarDados)="setDados($event)"></app-output>
 
-    <router-outlet></router-outlet>`
+    <router-outlet></router-outlet>[
+
+  `
 })
 export class AppComponent implements OnInit{
 
